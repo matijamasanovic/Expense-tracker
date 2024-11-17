@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Expense tracker</title>
+  </head>
+  <body>
+    <h1 class="app-header">Expense tracker</h1>
+    <div class="container">
+      <div class="expense-navbar">
+        <div class="category navbar-item">
+          <label for="category-select">Category:</label>
+          <select id="category-select">
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Relaxing">Relaxing</option>
+          </select>
+        </div>
+
+        <div class="amount navbar-item">
+          <label for="amount-input">Amount: </label>
+          <input type="number" id="amount-input" />
+        </div>
+
+        <div class="date navbar-item">
+          <label for="date-input">Date: </label>
+          <input type="date" name="" id="date-input" />
+        </div>
+
+        <button id="add-btn"><strong>+ </strong>Add</button>
+      </div>
+
+      <div class="expenses-list">
+        <h2>Expenses List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="expnese-table-body"></tbody>
+          <tfoot>
+            <tr>
+              <td>Total:</td>
+              <td id="total-amount"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
